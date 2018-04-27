@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!--服务器ID，由数据中心分配 -->
+	<log>
+		<config>config/logcenter.sample.log.xml</config>
+	</log>
+	<server > <!-- 服务器 端口 -->
+		<port>:9090</port> <!-- 查看性能的端口 -->
+	</server>
+	<pprof state="true"> <!-- 服务器性能监控 -->
+		<port>:9040</port> <!-- 查看性能的端口 -->
+	</pprof>
+	<amount><!-- 服务器线程数,连接数配置 -->
+		<kafka_producer>50</kafka_producer>	
+		<kafka_consumer>30</kafka_consumer>
+		<handle_pool>1000</handle_pool>
+	</amount>	
+	<client>
+		<server name="kafka">10.246.95.100:9092</server> <!-- kafka地址 -->
+	</client>
+
+	<client>
+		<server name="elasticsearch">http://10.246.95.100:9200</server> <!-- elasticsearch地址 -->
+	</client>
+</config>
