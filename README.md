@@ -1,2 +1,3 @@
 # logcenter for gameserver
-## scene--logcenter--kafka--logstash--elasticsearch
+## structure scene--logcenter--kafka--logstash--elasticsearch
+
